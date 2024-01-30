@@ -13,6 +13,19 @@
         table {
             border-collapse: collapse;
         }
+        li{
+            background-color: rgb(81, 230, 217);
+            display: inline-block;
+        }
+        header{
+            background-color: bisque;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        section{
+            background-color: rgb(153, 136, 170);
+        }
     </style>
 </head>
 <body>
@@ -20,26 +33,30 @@
         <h1>HTML EXERCISE</h1>
     </header>
     <hr>
-    <nav>
-        <section>
+    <nav>  
             <h2><a style="font-style:italic">LINKS</a></h2>
-            <ul>
-                <li><h3><a href="#">Home</a></h3></li>
-                <li><h3><a href="#">About Us</a></h3></li>
-                <li><h3><a href="#">Contact</a></h3></li>
-            </ul>
-        </section>
+            <menu>
+                <h3><a href="#">Home</a></h3>
+                <h3><a href="#">About Us</a></h3>
+                <h3><a href="#">Contact</a></h3>
+            </menu>
+        <ul>
+            <li><h3><a href="#img">IMAGES</a></h3></li>
+            <li><h3><a href="#frm">FORMS</a></h3></li>
+            <li><h3><a href="#tbl">TABLES</a></h3></li>
+            <li><h3><a href="#anv">AUDIO AND VIDEO</a></h3></li>
+        </ul>
     </nav>
     <hr>
-    <section>
+    <section id="img">
         <h2><a style="font-style:italic">IMAGES</a></h2>
         <figure>
-            <img src="Pogi.jpg" alt="This is Jay Allen the pogi">
+            <abbr title="It means pogi"><img src="Pogi.jpg" alt="This is Jay Allen the pogi" ></abbr>
             <figcaption><a style="font-style:oblique">My vacation in Baler Aurora last Christmas</a></figcaption>
         </figure>   
     </section>
     <hr>
-    <section>
+    <section id="frm">
         <h2><a style="font-style:italic">FORMS</a></h2>
         <form>
             <label for="name"><strong>Name:</strong></label>
@@ -57,7 +74,7 @@
         </form>
     </section>
     <hr>
-    <section>
+    <section id="tbl">
         <h2><a style="font-style:italic">TABLES</a></h2>
         <table>
             <tr>
@@ -78,13 +95,14 @@
         </table>
     </section>  
     <hr>
-    <section>
+    <section id="anv">
         <h2><a style="font-style:italic">AUDIO AND VIDEO</a></h2>
         <audio controls>
             <source src="https://web.archive.org/web/20141229185302if_/http://www.html.it/wp-content/uploads/audio/files/a/justabeat_HISTORY.mp3">
+        <br>    
         </audio>
-        <video controls>
-            <source src="https://archive.org/download/ppldco-Teen_Tech_-_Code_a_Webpage_Using_HTML_CSS/Teen_Tech_-_Code_a_Webpage_Using_HTML_CSS.mp4">
+        <video width="320" height="240" controls>
+            <source src="https://archive.org/download/CC_1914_02_02_MakingALiving/CC_1914_02_02_MakingALiving_512kb.mp4 ">
         </video>
     </section>
     <hr>
