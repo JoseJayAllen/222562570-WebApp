@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ExternalFile.js"></script>
     <title>HTML Exercise</title>
     <style>
         th, td {
@@ -34,6 +35,9 @@
             display: block;
             color: black;
         }
+        p{
+            font-size: larger;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +45,9 @@
         <h1>HTML EXERCISE</h1>
     </header>
     <hr>
+    <h3>Date Today</h3>
+    <p id="date"></p>
+    <p id="time"></p>
     <nav>  
             <h2><a style="font-style:italic">LINKS</a></h2>
             <menu>
@@ -53,6 +60,7 @@
             <li><h3><a href="#frm">FORMS</a></h3></li>
             <li><h3><a href="#tbl">TABLES</a></h3></li>
             <li><h3><a href="#anv">AUDIO AND VIDEO</a></h3></li>
+            <li><h3><a href="#iframe">CONTENTS</a></h3></li>
         </ul>
     </nav>
     <hr>
@@ -60,9 +68,9 @@
         <h2><a style="font-style:italic">IMAGES</a></h2>
         <figure>
             <abbr title="It means pogi"><img src="Pogi.jpg" alt="This is Jay Allen the pogi"></abbr>
-            <figcaption><a style="font-style:oblique">My vacation in Baler Aurora last Christmas</a></figcaption>
-            <img src="https://archive.org/download/ion-cena//384328745_962167728760827_2749544575482373794_n.jpeg" width="600" height="450" alt="Ion Cena">
-            <p><cite>Ion Cena</cite> By Anonimo. Published on September 27,2023</p>
+            <figcaption><a style="font-style:oblique">My vacation in <abbr title="Baler is a town on the Philippine island of Luzon. In its center, Museo de Baler chronicles colonial history. On the coast, Cemento Beach is known for powerful surf, and Sabang Beach is lined with resorts.">Baler Aurora</abbr> last Christmas</a></figcaption>
+            <abbr title="This illustration shows the relative sizes of the Sun and the Earth by placing them impossibly close together."><img src="https://archive.org/download/SPITZ-sig07-012//sig07-012_mac.jpg" width="200" height="250" alt="Sun and Earth in Scale"></abbr>
+            <p><cite>Sun and Earth in Scale</cite>By NASA/JPL-Caltech/R.Hurt(SSC)</p>
         </figure>   
     </section>
     <hr>
@@ -77,13 +85,13 @@
             <input type="radio" name="gender" id="male" value="male" style="font-size: 20px;">
             <label for="male">Male</label>
             <input type="radio" name="gender" id="female" value="female" style="font-size: 20px;">
-            <label for="female">Female</label>
+            <label for="female">Female</label><br>
             <label for="date"><strong>Date:</strong></label>
             <input type="text" id="date" name="date" style="font-size: 20px;" required><br>
-            <label for="email"><strong>Email Address:</strong></label>
-            <input type="text" id="email" name="email" style="font-size: 20px;" required><br>
             <label for="number"><strong>Contact Number:</strong></label>
             <input type="number" id="number" name="number" minlength="11" style="font-size: 20px;" required><br>
+            <label for="email"><strong>Email Address:</strong></label>
+            <input type="text" id="email" name="email" style="font-size: 20px;" required><br>
             <input type="checkbox" id="terms" name="terms" required style="font-size: 20px;">
             <label for="terms"><strong>I accept the terms and conditions</strong></label><br>
             <input type="submit" value="SUBMIT" style="font-size: 20px;">
@@ -124,13 +132,10 @@
     <hr>
     <section id="iframe">
         <h2><a style="font-style:italic">CONTENTS</a></h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1206.9502884701953!2d120.57572123426792!3d16.456857281283074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1706780811764!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>   
-    <a class="Tik-Tok"
-    href="https://www.instagram.com/jayallenj/">Instagram Feed</a>
-    <script async
-    src=""
-    charset="utf-8"></script>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1206.9502884701953!2d120.57572123426792!3d16.456857281283074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1706780811764!5m2!1sen!2sph" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMadmosielle1%2Fposts%2Fpfbid034rxaJc7esKWYSKwGtUd3r4MoBwezsvZZ4CLsZLufCkJVRFv6UR4jW8vJrovchMtrl&show_text=true&width=500" width="500" height="395" style="border:black;overflow:hidden" frameborder="1" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+    </iframe>
     </section>
     <footer>
         <h1>END OF THE PAGE</h1>
