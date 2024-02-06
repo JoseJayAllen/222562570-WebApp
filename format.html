@@ -61,6 +61,7 @@
             <li><h3><a href="#tbl">TABLES</a></h3></li>
             <li><h3><a href="#anv">AUDIO AND VIDEO</a></h3></li>
             <li><h3><a href="#iframe">CONTENTS</a></h3></li>
+            <li><h3><a href="#format">FORMATTING</a></h3></li>
         </ul>
     </nav>
     <hr>
@@ -136,6 +137,43 @@
     </iframe>
         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMadmosielle1%2Fposts%2Fpfbid034rxaJc7esKWYSKwGtUd3r4MoBwezsvZZ4CLsZLufCkJVRFv6UR4jW8vJrovchMtrl&show_text=true&width=500" width="500" height="395" style="border:black;overflow:hidden" frameborder="1" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
     </iframe>
+    </section>
+    <hr>
+    <section id="format">
+        <h2><a style="font-style: italic;">FORMATTING</a></h2>
+        <p>
+            My name is <b><bdi dir="rtl">جاي ألين خوسيه</bdi></b> from La Trinidad, Benguet. <br>
+            <bdo dir="rtl">My name is Allen from La Trinidad, Benguet.</bdo>
+        </p>
+        <address>
+            <strong>ADDRESS</strong>
+            <a href="mailto: josejayalle2003@gmail.com">josejayalle2003@gmail.com</a>
+            <a href="tel: +639273634685">+63 927-363-4685</a>
+            AE-48 Western Buyagan Poblacion <br>
+            La Trinidad, Benguet, 2601<br>
+            Philippines 
+        </address>
+        <center><b>HTML HISTORY</b>
+        <blockquote cite="https://www.washington.edu/accesscomputing/webd2/student/index.html">
+            The first version of HTML was written by <u>Tim Berners-Lee in 1993</u>. Since then, there have been many different versions of HTML. 
+            The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.
+        </blockquote></center><br>
+        <p>
+            The <code>address</code> tag of HTML defines contact information for the author/owner of a document/article. <br>
+            <hr>
+            Oh! What's in here!
+        </p>
+        <button onclick="dontClick()">DONT CLICK</button>
+        <template>
+        <img src="https://www.meme-arsenal.com/memes/67a5a9d73b745adcc198166f8128e20e.jpg" width="214" height="204">
+        </template>
+        <script>
+            function dontClick() {
+                let temp = document.getElementsByTagName("template")[0];
+                let clon = temp.content.cloneNode(true);
+                document.body.insertBefore(clon, document.querySelector("footer"));
+            }
+        </script>
     </section>
     <footer>
         <h1>END OF THE PAGE</h1>
