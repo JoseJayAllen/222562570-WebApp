@@ -6,3 +6,8 @@ h2{
 .paragraph{
         color: blueviolet;
 }
+ol{
+        color: teal;
+        font-size: smaller;
+        padding: 100px;
+}
